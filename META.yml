@@ -1,0 +1,40 @@
+---
+abstract: 'A POE mechanism for querying the CPANIDX'
+author:
+  - 'Chris Williams <chris@bingosnet.co.uk>'
+build_requires:
+  ExtUtils::MakeMaker: 6.42
+  HTTP::Date: 0
+  HTTP::Response: 0
+  POE::Filter::HTTP::Parser: 1.02
+  Test::More: 0.47
+  Test::POE::Server::TCP: 1.08
+configure_requires:
+  ExtUtils::MakeMaker: 6.42
+distribution_type: module
+generated_by: 'Module::Install version 0.94'
+license: perl
+meta-spec:
+  url: http://module-build.sourceforge.net/META-spec-v1.4.html
+  version: 1.4
+name: POE-Component-CPANIDX
+no_index:
+  directory:
+    - examples
+    - inc
+    - t
+provides:
+  POE::Component::CPANIDX:
+    file: lib/POE/Component/CPANIDX.pm
+    version: 0.04
+requires:
+  POE: 1.287
+  POE::Component::Client::HTTP: 0.895
+  URI: 1.52
+  YAML::Tiny: 1.41
+  perl: 5.6.0
+resources:
+  homepage: http://github.com/bingos/poe-component-cpanidx/tree
+  license: http://dev.perl.org/licenses/
+  repository: git://github.com/bingos/poe-component-cpanidx.git
+version: 0.04
